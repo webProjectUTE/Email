@@ -11,10 +11,10 @@
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 		<properties>
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/murach" />
-			<property name="javax.persistence.jdbc.user" value="root" />
+				value="jdbc:mysql://sql6.freemysqlhosting.net:3306/sql6444924" />
+			<property name="javax.persistence.jdbc.user" value="sql6444924" />
 			<property name="javax.persistence.jdbc.password"
-				value="minhthu28092001" />
+				value="QWEVTXaMaq" />
 			<property name="javax.persistence.jdbc.driver"
 				value="com.mysql.jdbc.Driver" />
 			<property

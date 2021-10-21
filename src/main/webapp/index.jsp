@@ -37,7 +37,11 @@
 			<div class="modalbtn-container" id="modal_container">
 				<div class="modalbtn">
 					<h1 class="text-black">Email List</h1>
-					<img src="images/13_1_email.png" alt="Chapter 13 - Exercise 1">
+					<a
+						href="https://drive.google.com/file/d/116tdEa1NAb-VGROEv2nATwCzJ-LOFfqF/view?usp=sharing"
+						target="_blank"> <img src="images/13_1_email.png"
+						alt="Chapter 13 - Exercise 1">
+					</a>
 					<button id="close">Close</button>
 				</div>
 			</div>
@@ -50,27 +54,23 @@
 						class="sidebar-text text-white">Home</span> <span
 						class="sidebar-status"></span>
 				</a></li>
-				<li><a href="../Survey" class="sidebar-item"> <i
+				<li><a href="https://nhatsang-survey.herokuapp.com/" class="sidebar-item"> <i
 						class="fab fa-java sidebar-icon text-white"></i> <span
 						class="sidebar-text text-white">Survey</span>
 				</a></li>
-				<li><a href="../Download" class="sidebar-item"> <i
+				<li><a href="https://nhatsang-download.herokuapp.com/" class="sidebar-item"> <i
 						class="fab fa-java sidebar-icon text-white"></i> <span
 						class="sidebar-text text-white">Download</span>
 				</a></li>
-				<li><a href="../Cart" class="sidebar-item"> <i
+				<li><a href="https://nhatsang-cart.herokuapp.com/" class="sidebar-item"> <i
 						class="fab fa-java sidebar-icon text-white"></i> <span
 						class="sidebar-text text-white">Cart</span>
-				</a></li>
-				<li><a href="../sqlGateway" class="sidebar-item"> <i
-						class="fab fa-java sidebar-icon text-white"></i> <span
-						class="sidebar-text text-white">sqlGateway</span>
 				</a></li>
 				<li><a href="#" class="sidebar-item sidebar-item--active">
 						<i class="fab fa-java sidebar-icon text-white"></i> <span
 						class="sidebar-text text-white">Email</span>
 				</a></li>
-				<li><a href="../userAdmin" class="sidebar-item"> <i
+				<li><a href="https://nhatsang-userAdmin.herokuapp.com/" class="sidebar-item"> <i
 						class="fab fa-java sidebar-icon text-white"></i> <span
 						class="sidebar-text text-white">userAdmin</span>
 				</a></li>
@@ -79,7 +79,7 @@
 			<!--Main content-->
 			<div class="col-9">
 				<form action="emailList" method="post" class="container box">
-				<input type="hidden" name="action" value="add">
+					<input type="hidden" name="action" value="add">
 					<table class="table table-borderless">
 						<tbody>
 							<tr>
@@ -91,21 +91,21 @@
 								</p>
 								<td class="text-right td-label"><label class="text-white"
 									for="customer-name">Email:</label></td>
-								<td><input type="email" class="input-focus usid"
-									name="email" id="customer-name" value="${user.email}" required></td>
+								<td><input type="text" class="input-focus usid"
+									name="email" id="customer-name" value="${user.email}"></td>
 							</tr>
 							<tr>
 							<tr>
 								<td class="text-right td-label"><label class="text-white"
 									for="customer-name">First Name:</label></td>
 								<td><input type="text" class="input-focus usid"
-									name="firstName" id="customer-name" value="${user.firstName}" required></td>
+									name="firstName" id="customer-name" value="${user.firstName}"></td>
 							</tr>
 							<tr>
 								<td class="text-right td-label"><label class="text-white"
 									for="customer-email">Last Name:</label></td>
 								<td><input type="text" class="input-focus usid"
-									name="lastName" id="customer-email" value="${user.lastName}" required></td>
+									name="lastName" id="customer-email" value="${user.lastName}"></td>
 							</tr>
 							<td class="text-right"></td>
 							<td><span class="btn-color"> <input type="submit"

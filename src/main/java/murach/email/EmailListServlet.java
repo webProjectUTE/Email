@@ -13,7 +13,7 @@ public class EmailListServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
-        String url = "/index.html";
+        String url = "/index.jsp";
         
         // get current action
         String action = request.getParameter("action");
@@ -39,9 +39,18 @@ public class EmailListServlet extends HttpServlet {
 
             // validate the parameters
             String message;
-            if (UserDB.emailExists(user.getEmail())) {
-                message = "This email address already exists.<br>" +
-                          "Please enter another email address.";
+            if (firstName == null || lastName == null || email == null ||
+                    firstName.isEmpty() || lastName.isEmpty() || email.isEmpty()) {
+                    message = "*Please fill out all three text boxes!";
+                    url = "/index.jsp";
+            }
+            else if (!email.contains("@")) {
+            	message = "*Invalid email!";
+                url = "/index.jsp";
+            }
+            else if (UserDB.emailExists(user.getEmail())) {
+                message = "*This email address already exists. " +
+                          "Please enter another email address!";
                 url = "/index.jsp";
             }
             else {
